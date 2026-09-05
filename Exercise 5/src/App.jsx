@@ -1,10 +1,11 @@
-import UseCard from "./UseCard";
+import shopingCart from "./ShopingCart";
 
 function App(){
 
   return(
     <>
-    <UseCard />
+    <shopingCart />
+    
     </>
   );
 }
