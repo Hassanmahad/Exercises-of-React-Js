@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState ,useEffect } from "react";
 
-const App = () => {
-    const [coords, setCoords] = useState({ x: 0, y: 0 });
+
+function App(){
+  const [coords, setCoords] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -10,11 +11,10 @@ const App = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Cleanup
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []); // Runs once on mount
+  }, []); 
 
   return (
     <div>
@@ -22,6 +22,5 @@ const App = () => {
       <p>Mouse Y: {coords.y}</p>
     </div>
   );
-};
-
-export default App;
+}
+export default App; 
