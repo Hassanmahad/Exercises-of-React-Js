@@ -4,7 +4,7 @@ import { useState ,useEffect } from "react";
 function App(){
 
 
-  const [time, setTime] = useState(5);          // Elapsed time in seconds
+  const [time, setTime] = useState(0);          // Elapsed time in seconds
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ function App(){
 
       </div>
       <h2>Stopwatch: {time} seconds</h2>
-      <button onClick={handleStart} disabled={isRunning}>Start</button>
+      <button onClick={handleStart} disabled={isRunning }>Start</button>
       <button onClick={handleStop} disabled={!isRunning}>Stop</button>
       <button onClick={handleReset}>Reset</button>
     </div>
