@@ -20,7 +20,7 @@ const App = () => {
   if (isLogin) {
     return (
       <div>
-        <h1>Welcome , {username}</h1>
+        <p>Welcome , {username}</p>
         <button onClick={handleLogOut}>LogOut</button>
       </div>
     );
