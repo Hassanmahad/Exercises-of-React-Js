@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+
+.MainContainer{
+width: 450px;
+  padding: 35px;
+
+  background: #ffffff;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+
+}
+.mytodotitle{
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+/* Input + Button */
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+.todo-form input {
+  flex: 1;
+  padding: 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-form input:focus {
+  border-color: #8b5cf6;
+}
+
+/* Add button */
+.todo-form button {
+  padding: 0 22px;
+
+  background: #8b5cf6;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background: #7c3aed;
+}
+
+/* Todo list */
+.todo-list {
+  margin-top: 25px;
+}
+
+/* Each todo */
+.todo-item {
+  display: flex;
+  align-items: center;
+
+  padding: 15px 5px;
+
+  border-bottom: 1px solid #eee;
+}
+
+/* Checkbox */
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+/* Todo text */
+.todo-item span {
+  flex: 1;
+  font-size: 17px;
+  color: #333;
+}
+
+/* Completed todo */
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Delete button */
+.todo-item button {
+  background: none;
+  border: none;
+
+  color: #e74c3c;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  color: #c0392b;
+}
